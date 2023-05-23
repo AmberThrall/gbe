@@ -7,7 +7,7 @@ COMPILE_FLAGS = -std=c++11 -Wall -Wextra -g
 # Includes
 INCLUDES = -I include/
 # Space-seperated pkg-config libraries
-LIBS = 
+LIBS = -lfmt
 # Source path
 SRC_PATH = src
 # Build output path
