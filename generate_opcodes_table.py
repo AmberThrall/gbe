@@ -17,7 +17,7 @@ def generate_code(block):
             
             bytes = operand.get("bytes", 0)
             if bytes > 0:
-                format += "%0{}X".format(bytes * 2)
+                format += "0x{{:0{}X}}".format(bytes * 2)
             else:
                 format += operand["name"]
 
